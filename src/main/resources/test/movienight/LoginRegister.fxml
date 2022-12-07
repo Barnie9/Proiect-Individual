@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.movienight.LoginRegisterController">
+   <children>
+      <AnchorPane fx:id="registerForm" prefHeight="700.0" prefWidth="1400.0">
+         <children>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="60.0" prefHeight="30.0" prefWidth="240.0" text="Register" textFill="#180273">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="180.0" prefHeight="40.0" prefWidth="240.0" text="Username">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="580.0" layoutY="220.0" prefHeight="40.0" prefWidth="240.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="280.0" prefHeight="40.0" prefWidth="240.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="580.0" layoutY="320.0" prefHeight="40.0" prefWidth="240.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="380.0" prefHeight="40.0" prefWidth="240.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="580.0" layoutY="420.0" prefHeight="40.0" prefWidth="240.0">
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
+            <Button fx:id="registerButton" alignment="CENTER" layoutX="610.0" layoutY="500.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="180.0" text="Register">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="switchToLogin" alignment="CENTER" layoutX="580.0" layoutY="560.0" onAction="#switchForm" prefHeight="40.0" prefWidth="240.0" text="Ai deja un cont?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+
+      <AnchorPane fx:id="loginForm" prefHeight="700.0" prefWidth="1400.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="100.0" prefHeight="30.0" prefWidth="240.0" text="Login" textFill="#180273">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="220.0" prefHeight="30.0" prefWidth="240.0" text="Username or email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="580.0" layoutY="260.0" prefHeight="40.0" prefWidth="240.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="580.0" layoutY="320.0" prefHeight="40.0" prefWidth="240.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="580.0" layoutY="360.0" prefHeight="40.0" prefWidth="240.0">
+               <font>
+                  <Font size="20.0" />
+               </font></PasswordField>
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="610.0" layoutY="440.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="180.0" text="Login">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="switchToRegister" alignment="CENTER" layoutX="580.0" layoutY="500.0" onAction="#switchForm" prefHeight="40.0" prefWidth="240.0" text="Creeaza un cont nou!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
