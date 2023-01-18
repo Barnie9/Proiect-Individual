@@ -1388,6 +1388,10 @@ public class UserPageController {
     private BarChart<String, Integer> barchart;
 
     public void generateBarChart() {
+        if(barchart.getData().size() != 0) {
+            barchart.getData().remove(0);
+        }
+
         Map<String, Integer> map = new HashMap<>();
         for(Movie movie : Data.favorites) {
             for(String genre : movie.getGenres()) {
